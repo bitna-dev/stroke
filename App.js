@@ -69,32 +69,32 @@ export default function App() {
       </SafeAreaView>
     </SafeAreaProvider>
   )
-  return (
-    <SafeAreaProvider>
-      <SafeAreaView edges={['top', 'right', 'left']} style={styles.container}>
-        <View style={{ flex: 1, paddingHorizontal: 15 }}>
-          {/* <Text>Open up App.js to start working on your app!</Text> */}
-          {/* <StatusBar style="auto" /> */}
-          <Header label="Chat" />
-          <Spacing />
-          <Profile name={name} uri={uri} introduction={introduction} />
-          <Spacing />
-          <Divider />
-          <Spacing />
-          <FriendSection
-            isOpen={isOpen}
-            friends={friendProfiles}
-            onPress={onPressArrow}
-          />
-          <FriendList friends={friendProfiles} isOpen={isOpen} />
-        </View>
-        <Navbar
-          selectedTabIdx={selectedTabIdx}
-          setSelectedTabIdx={setSelectedTabIdx}
-        />
-      </SafeAreaView>
-    </SafeAreaProvider>
-  )
+  // return (
+  //   <SafeAreaProvider>
+  //     <SafeAreaView edges={['top', 'right', 'left']} style={styles.container}>
+  //       <View style={{ flex: 1, paddingHorizontal: 15 }}>
+  //         {/* <Text>Open up App.js to start working on your app!</Text> */}
+  //         {/* <StatusBar style="auto" /> */}
+  //         <Header label="Chat" />
+  //         <Spacing />
+  //         <Profile name={name} uri={uri} introduction={introduction} />
+  //         <Spacing />
+  //         <Divider />
+  //         <Spacing />
+  //         <FriendSection
+  //           isOpen={isOpen}
+  //           friends={friendProfiles}
+  //           onPress={onPressArrow}
+  //         />
+  //         <FriendList friends={friendProfiles} isOpen={isOpen} />
+  //       </View>
+  //       <Navbar
+  //         selectedTabIdx={selectedTabIdx}
+  //         setSelectedTabIdx={setSelectedTabIdx}
+  //       />
+  //     </SafeAreaView>
+  //   </SafeAreaProvider>
+  // )
 }
 
 const styles = StyleSheet.create({
